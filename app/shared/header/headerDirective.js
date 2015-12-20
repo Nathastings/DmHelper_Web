@@ -1,3 +1,8 @@
-/**
- * Created by natha_000 on 12/19/2015.
- */
+angular.module('client_app').directive('header', function(){
+    return {
+        restrict: 'E',
+        templateUrl: "app/shared/header/headerView.html",
+        controller: 'HeaderController',
+        controllerAs:"header"
+    };
+});

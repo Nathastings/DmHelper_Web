@@ -1,3 +1,5 @@
-/**
- * Created by natha_000 on 12/19/2015.
- */
+angular.module('client_app',['ngRoute']);
+
+angular.module('client_app').controller('HeaderController',['$scope',function($scope){
+
+}]);
