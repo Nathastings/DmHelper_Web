@@ -19,8 +19,8 @@ angular.module('dmHelperApi', [])
          *   a simple flag indicating if I am returning a lot of this resource.
          */
         var thenFactoryMethod = function(httpPromise, successcb,errorcb, isArray){
-            var scb = successcb || angular.noop(); //if I don't have a success function then DO NOTHING!
-            var ecb = errorcb || angular.noop(); //same for error
+            var scb = successcb || angular.noop; //if I don't have a success function then DO NOTHING!
+            var ecb = errorcb || angular.noop; //same for error
 
             return httpPromise.then(function(response){
                 var result;
