@@ -20,6 +20,25 @@
         <div ng-view>
 
         </div>
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <form id="registerForm" role="form" action="" method="post" class="form-horizontal">
+                    <fieldset class="form-group">
+                        <label for="registerEmail">Email Address:</label>
+                        <input type="email" class="form-control" id="registerEmail" placeholder="example@example.com" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="registerEmail">Password:</label>
+                        <input type="password" class="form-control" id="registerPassword" placeholder="Password" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="registerEmail">Password:</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword" placeholder="Confirm Password" />
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="assets/libs/bootstrap.min.js"></script>
