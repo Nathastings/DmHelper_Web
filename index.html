@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="client_app">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>DM Helper - The Tool For World Building</title>
     <!--My Styles -->
+    <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/styles/styles.css"/>
     <!--Essential Script Libs-->
     <script type="text/javascript" src="assets/libs/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="assets/libs/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/libs/angular.min.js"></script>
     <script type="text/javascript" src="assets/libs/angular-route.min.js"></script>
 </head>
-<body>
-<div class="container">
-    <header></header>
-    <div ng-view>
-
+<body  ng-app="client_app">
+    <div class="container-fluid">
+        <header></header>
     </div>
-</div>
+    <div class="container">
+        <div ng-view>
+
+        </div>
+    </div>
 </body>
+<script type="text/javascript" src="assets/libs/bootstrap.min.js"></script>
 <!--Helper Modules -->
 <script type="text/javascript" src="app/client_app.module.js"></script>
 <script type="text/javascript" src="assets/js/dmHelper-api-resource.js"></script>

@@ -1,12 +1,4 @@
 angular.module('dmHelperApi', [])
-.config(['$httpProvider', function($httpProvider) {
-        $httpProvider.defaults.useXDomain = true;
-        $httpProvider.defaults.withCredentials = true;
-        delete $httpProvider.defaults.headers.common["X-Requested-With"];
-        $httpProvider.defaults.headers.common["Accept"] = "application/json";
-        $httpProvider.defaults.headers.common["Content-Type"] = "application/json";
-    }
-])
 .factory('dmHelperApi',['API_CONFIG','$http', function(API_CONFIG,$http){
     function DmHelperApi(collectionName){
         var url = API_CONFIG.baseUrl + API_CONFIG.dbPath+collectionName;
