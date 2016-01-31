@@ -1,6 +1,6 @@
 (function(window,angular){
     'use strict';
-    angular.module('client_app').factory('authData',[function(){
+    angular.module('resources.auth').factory('authData',[function(){
         var authDataFactory = {};
         var _authentication = {
             IsAuthenticated: false,
