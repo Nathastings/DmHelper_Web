@@ -23,6 +23,7 @@
             StorageSource.remove = function(){
                 localStorageService.remove(key);
             }
+            return StorageSource;
         };
         return Storage;
     });

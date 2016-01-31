@@ -1,6 +1,6 @@
 (function (window,angular){
     'use strict';
-    angular.module('client_app',['ngRoute','resources.world','resources.campaign']);
+    angular.module('client_app',['ngRoute','resources.world','resources.campaign','resources.auth']);
     angular.module('client_app').constant('API_CONFIG', {
         baseUrl: 'https://localhost:44300/',
         dbPath: 'api/'
@@ -52,6 +52,5 @@
     }]);
 
     angular.module('client_app').controller('HeaderController',['$scope',function($scope){
-
     }]);
 })(window,window.angular);
